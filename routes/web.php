@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 选择支付方式
+Route::get('/wechat','Home\IndexController@index');
+
+//支付页面
+Route::get('/pay','Home\IndexController@pay');
